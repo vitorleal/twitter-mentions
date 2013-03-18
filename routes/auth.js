@@ -4,8 +4,8 @@ var oAuth  = require('oauth'),
   //basic config
   config = {
     //the key and secret should not be visible here, but is just to demonstrate the app
-    consumerKey    : "bl0EZitIBPpGZbOLDCg7A",
-    consumerSecret : "yzGx7r3HwRUCvkueXPie4PCs9oU9VdK5B9IK9Iej26k",
+    consumerKey    : "98lnhe1lmRpkyaSCt9rDDg",
+    consumerSecret : "yzPGCmQxYvDVe9U475oVhXl7aYE4qaEUXHpkyBXTK8",
     callbackUrl    : "http://localhost:3000/callback",
     authorizeUrl   : "https://twitter.com/oauth/authorize?oauth_token=",
     credentialsUrl : "https://api.twitter.com/1/account/verify_credentials.json",
