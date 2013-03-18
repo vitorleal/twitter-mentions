@@ -1,0 +1,22 @@
+{
+  "name": "twitter-mention-app",
+  "version": "0.1.0",
+  "author": "Vitor Leal <vitorleal1@gmail.com>",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.1.0",
+    "hjs": "*",
+    "less-middleware": "*",
+    "oauth": "~0.9.10"
+  },
+  "devDependencies": {
+    "grunt": "0.4.0rc7",
+    "grunt-contrib-jshint": "0.1.1rc6"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
+}

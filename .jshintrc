@@ -1,0 +1,6 @@
+{
+  "node": true,
+  "es5": true,
+  "globals": true,
+  "indent": 2
+}

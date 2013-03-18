@@ -1,0 +1,60 @@
+body {
+  background: #eaeaea;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+}
+
+.circle {
+  border: solid 4px rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  padding: 30px;
+  position: absolute;
+  text-align: center;
+  height: 200px; width: 200px;
+  margin: -115px 0 0 -115px;
+  top: 40%; left: 50%;
+}
+
+#landing,
+#user {
+  background: rgb(0, 185, 244);
+  color: rgb(255, 255, 255);
+
+  h1 { margin-top: 30px; }
+
+  a {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    color: rgb(0, 185, 244);
+    display: inline-block;
+    margin-top: 16px;
+    padding: 6px 12px;
+    text-decoration: none;
+    transition: background .5s;
+    -webkit-transition: background .5s;
+
+    &:hover { background: rgba(255, 255, 255, .5); }
+  }
+
+  img { border-radius: 50%; }
+}
+
+.mention {
+  background: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+
+  p { margin-top: 24px; }
+
+  img {
+    border-radius: 50%;
+    margin-right: 12px;
+    vertical-align: middle;
+  }
+}
+
+#container {
+  bottom: 0; top: 0; left: 0; right: 0;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}

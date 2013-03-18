@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ user.name }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r55/three.min.js"></script>
+  </head>
+
+  <body>
+    <div id="user" class="circle">
+      <img src="{{ user.profile_image_url }}">
+      <h1>{{ user.name }}</h1>
+      <span>Showing <strong>{{ total }}</strong> mentions</span>
+    </div>
+    <div id="mention"></div>
+
+    <div id="container"></div>
+    <script>
+      window.mentions = {{{ mentions }}}
+    </script>
+    <script src="javascripts/app.js"></script>
+    <script src="http://twitter.github.com/hogan.js/builds/2.0.0/hogan-2.0.0.js"></script>
+  </body>
+</html>
