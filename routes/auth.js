@@ -51,10 +51,11 @@ exports.callback = function (req, res) {
               res.send("Error getting the mentions");
 
             } else {
+              console.log(data.length);
               res.render("app", {
                 user: req.session.user,
                 mentions: data,
-                total: data.length
+                total: JSON.parse(data).length
               });
             }
           });
