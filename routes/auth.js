@@ -54,7 +54,7 @@ exports.callback = function (req, res) {
               res.render("app", {
                 user: req.session.user,
                 mentions: data,
-                total: data.length
+                total: JSON.parse(data).length
               });
             }
           });
