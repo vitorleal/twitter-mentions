@@ -3,6 +3,7 @@
 var oAuth  = require('oauth'),
   //basic config
   config = {
+    //the key and secret should not be visible here, but is just to demonstrate the app
     consumerKey    : "bl0EZitIBPpGZbOLDCg7A",
     consumerSecret : "yzGx7r3HwRUCvkueXPie4PCs9oU9VdK5B9IK9Iej26k",
     callbackUrl    : "http://localhost:3000/callback",
