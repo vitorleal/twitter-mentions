@@ -12,8 +12,9 @@ First clone the repo
 $ git clone https://github.com/vitorleal/twitter-mentions.git
 ```
 
-Install the dependencies
+Install the dependencies after you enter in the app directory
 ```bash
+$ cd twitter-mentions/
 $ npm install
 ```
 
