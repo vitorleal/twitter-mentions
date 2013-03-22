@@ -3,7 +3,7 @@ Twitter mentions
 
 ## Description
 
-A simple app done with NODE using THREEjs to show your last mentions.
+A simple app done with NODE using THREEjs to show your mentions.
 
 ## Usage
 
