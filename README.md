@@ -1,5 +1,4 @@
-Twitter mentions [![Dependency
-Status](https://gemnasium.com/vitorleal/twitter-mentions.png)](https://gemnasium.com/vitorleal/twitter-mentions)
+Twitter mentions [![DependencyStatus](https://gemnasium.com/vitorleal/twitter-mentions.png)](https://gemnasium.com/vitorleal/twitter-mentions)
 =======
 
 ## Description
