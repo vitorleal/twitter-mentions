@@ -1,6 +1,6 @@
 'use strict';
 
-var oAuth  = require('oauth'),
+var oAuth = require('oauth'),
   //basic config
   config = {
     //the key and secret should not be visible here, but is just to demonstrate the app
