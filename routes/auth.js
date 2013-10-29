@@ -3,11 +3,10 @@
 var oAuth = require('oauth'),
   //basic config
   config = {
-    //the key and secret should not be visible here, but is just to demonstrate the app
-    consumerKey    : "98lnhe1lmRpkyaSCt9rDDg",
-    consumerSecret : "yzPGCmQxYvDVe9U475oVhXl7aYE4qaEUXHpkyBXTK8",
-    callbackUrl    : "http://localhost:3000/callback",
-    authorizeUrl   : "https://twitter.com/oauth/authorize?oauth_token=",
+    consumerKey    : process.env.CONSUMER_KEY,
+    consumerSecret : process.env.CONSUMER_SECRET,
+    callbackUrl    : "http://twitter-mentions.herokuapp.com/callback",
+    authorizeUrl   : "https://api.twitter.com/oauth/authorize",
     credentialsUrl : "https://api.twitter.com/1/account/verify_credentials.json",
     mentionsUrl    : "https://api.twitter.com/1.1/statuses/mentions_timeline.json?count=200"
   };
@@ -70,8 +69,8 @@ exports.callback = function (req, res) {
 //function to deal with the oAuth
 function authenticate() {
   return new oAuth.OAuth(
-    "https://twitter.com/oauth/request_token",
-    "https://twitter.com/oauth/access_token",
+    "https://api.twitter.com/oauth/request_token",
+    "https://api.twitter.com/oauth/access_token",
     config.consumerKey,
     config.consumerSecret,
     "1.0A", null, "HMAC-SHA1"
