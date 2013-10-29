@@ -7,7 +7,7 @@ var oAuth = require('oauth'),
     consumerSecret : process.env.CONSUMER_SECRET,
     callbackUrl    : "http://twitter-mentions.herokuapp.com/callback",
     authorizeUrl   : "https://api.twitter.com/oauth/authorize",
-    credentialsUrl : "https://api.twitter.com/1/account/verify_credentials.json",
+    credentialsUrl : "https://api.twitter.com/1.1/account/verify_credentials.json",
     mentionsUrl    : "https://api.twitter.com/1.1/statuses/mentions_timeline.json?count=200"
   };
 
