@@ -6,9 +6,9 @@ var oAuth = require('oauth'),
     consumerKey    : process.env.CONSUMER_KEY,
     consumerSecret : process.env.CONSUMER_SECRET,
     callbackUrl    : "http://twitter-mentions.herokuapp.com/callback",
-    authorizeUrl   : "https://api.twitter.com/oauth/authorize",
+    authorizeUrl   : "https://api.twitter.com/oauth/authorize/",
     credentialsUrl : "https://api.twitter.com/1.1/account/verify_credentials.json",
-    mentionsUrl    : "https://api.twitter.com/1.1/statuses/mentions_timeline.json?count=200"
+    mentionsUrl    : "https://api.twitter.com/1.1/statuses/mentions_timeline.json?count=800"
   };
 
 //Authenticate the user in the /oauth route
